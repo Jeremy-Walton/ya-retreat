@@ -1,0 +1,9 @@
+/* line 1, site.css.scss */
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; }
+
+/* line 7, site.css.scss */
+.content {
+  flex: 1; }
