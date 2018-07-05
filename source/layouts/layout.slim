@@ -8,10 +8,16 @@ html
     title = current_page.data.title || "Young Adult Retreat"
 
     link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'
-    link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"
+    link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"
+    = favicon_tag 'images/favicon.ico'
 
     == stylesheet_link_tag :site
-    == javascript_include_tag  "all"
+    == javascript_include_tag 'site'
+
+    / Global site tag (gtag.js) - Google Analytics
+    <script async src='https://www.googletagmanager.com/gtag/js?id=UA-58617289-2'></script>
+    == javascript_include_tag 'google-analytics'
+
 
   body class="#{page_classes}"
     nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
