@@ -16,7 +16,7 @@ html
 
   body class="#{page_classes}"
     nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
-      a.navbar-brand href='/index.html' Young Adult "Fall" Retreat
+      = nav_link('Young Adult "Fall" Retreat', '/index.html', { class: 'navbar-brand' })
       button.navbar-toggler type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"
         span.navbar-toggler-icon
 
