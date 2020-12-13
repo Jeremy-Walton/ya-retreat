@@ -5,7 +5,7 @@ html
     meta charset="utf-8"
     meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"
 
-    title = current_page.data.title || "Young Adult Retreat"
+    title = current_page.data.title || 'Young Adult "Fall" Retreat'
 
     link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'
     link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"
@@ -14,14 +14,9 @@ html
     == stylesheet_link_tag :site
     == javascript_include_tag 'site'
 
-    / Global site tag (gtag.js) - Google Analytics
-    <script async src='https://www.googletagmanager.com/gtag/js?id=UA-58617289-2'></script>
-    == javascript_include_tag 'google-analytics'
-
-
   body class="#{page_classes}"
     nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
-      a.navbar-brand href='/' Young Adult Retreat
+      a.navbar-brand href='/' Young Adult "Fall" Retreat
       button.navbar-toggler type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"
         span.navbar-toggler-icon
 
@@ -35,7 +30,7 @@ html
       == yield
 
     .container.mt-5
-      span © 2018 Jeremy Walton
+      span © 2020 Jeremy Walton
 
     script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"
     script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"
