@@ -1,4 +1,36 @@
 /* line 1, site.css.scss */
+:root {
+  --primary: #434242;
+  --secondary: #68A6BE;
+  --tertiary: #767474; }
+
+/* line 8, site.css.scss */
+.list-group-item-primary {
+  background-color: var(--primary);
+  color: white; }
+
+/* line 13, site.css.scss */
+.list-group-item-secondary {
+  background-color: var(--secondary);
+  color: white; }
+
+/* line 18, site.css.scss */
+.list-group-item-tertiary {
+  background-color: var(--tertiary);
+  color: white; }
+
+/* line 23, site.css.scss */
+.bg-tertiary {
+  background-color: var(--tertiary) !important; }
+
+/* line 27, site.css.scss */
 form {
   display: flex;
   justify-content: center; }
+
+/* line 32, site.css.scss */
+.welcome-image {
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  max-width: 50rem; }
