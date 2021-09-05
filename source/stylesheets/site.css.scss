@@ -24,6 +24,11 @@
   background-color: var(--tertiary) !important;
 }
 
+.btn-secondary {
+  background-color: var(--secondary);
+  color: white;
+}
+
 form {
   display: flex;
   justify-content: center;

@@ -3,9 +3,14 @@ title: 'Abide21 Retreat: Details'
 ---
 
 .container
-  .welcome-image
-    img.img-fluid src="images/abide21-final.png"
+  .px-4.my-5.text-center.border-bottom
+    .overflow-hidden style="max-height: 30vh;"
+      .container.px-5
+        img class='img-fluid mb-4' src="images/abide21-final.png" alt="Abide 21" width="700" height="500" loading="lazy"
 
+    .col-lg-6.mx-auto
+      .d-grid.gap-2.d-sm-flex.justify-content-sm-center.my-4
+        = nav_link('Register', '/registration.html', { class: 'btn btn-secondary btn-lg px-4 me-sm-3' })
 
   .row.g-4.py-3.row-cols-1.row-cols-lg-3.text-center
     div
