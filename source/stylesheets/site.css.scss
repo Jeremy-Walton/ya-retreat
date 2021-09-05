@@ -1,4 +1,37 @@
+:root {
+  --primary: #434242;
+  --secondary: #68A6BE;
+  --tertiary: #767474;
+}
+
+
+.list-group-item-primary {
+  background-color: var(--primary);
+  color: white;
+}
+
+.list-group-item-secondary {
+  background-color: var(--secondary);
+  color: white;
+}
+
+.list-group-item-tertiary {
+  background-color: var(--tertiary);
+  color: white;
+}
+
+.bg-tertiary {
+  background-color: var(--tertiary) !important;
+}
+
 form {
   display: flex;
   justify-content: center;
+}
+
+.welcome-image {
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  max-width: 50rem;
 }
