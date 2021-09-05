@@ -24,11 +24,16 @@
   background-color: var(--tertiary) !important; }
 
 /* line 27, site.css.scss */
+.btn-secondary {
+  background-color: var(--secondary);
+  color: white; }
+
+/* line 32, site.css.scss */
 form {
   display: flex;
   justify-content: center; }
 
-/* line 32, site.css.scss */
+/* line 37, site.css.scss */
 .welcome-image {
   margin: auto;
   margin-top: 1rem;
