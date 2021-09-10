@@ -3,165 +3,200 @@ title: Abide21 Retreat: Schedule
 ---
 
 .container.mt-2
-  .px-4.py-5.my-1.text-center
+  .my-2.text-center
     h1.display-5.fw-bold Schedule
     .col-lg-6.mx-auto
       p.lead.mb-4 Subject to change
 
-  ul.list-group
-    / Friday
-    li.list-group-item.list-group-item-primary
-      h5 Friday
-    li.list-group-item
-      .d-flex.justify-content-between
-        h5.mb-1 Leave Raleigh from the church
-        span.badge.rounded-pill.bg-tertiary.p-2 4:00 pm
-    li.list-group-item
-      .d-flex.justify-content-between
-        h5.mb-1 Arrival
-        span.badge.rounded-pill.bg-tertiary.p-2 9:00-10:30 pm
+  .container-sm
+    ul.schedule-buttons.nav.nav-pills.justify-content-evenly.mb-3#pills-tab role='tablist'
+      li.nav-item role='presentation'
+        button.nav-link.active#pills-friday-tab{
+          data-bs-toggle='pill'
+          data-bs-target='#pills-friday'
+          type='button'
+          role='tab'
+          aria-controls='pills-friday'
+          aria-selected='true'} 1 Fri
+      li.nav-item role='presentation'
+        button.nav-link#pills-saturday-tab{
+          data-bs-toggle='pill'
+          data-bs-target='#pills-saturday'
+          type='button'
+          role='tab'
+          aria-controls='pills-saturday'
+          aria-selected='false'} 2 Sat
+      li.nav-item  role='presentation'
+        button.nav-link#pills-sunday-tab{
+          data-bs-toggle='pill'
+          data-bs-target='#pills-sunday'
+          type='button'
+          role='tab'
+          aria-controls='pills-sunday'
+          aria-selected='false'} 3 Sun
+      li.nav-item  role='presentation'
+        button.nav-link#pills-monday-tab{
+          data-bs-toggle='pill'
+          data-bs-target='#pills-monday'
+          type='button'
+          role='tab'
+          aria-controls='pills-monday'
+          aria-selected='false'} 4 Mon
 
-    / Saturday
-    li.list-group-item.list-group-item-primary
-      h5 Saturday
-    li.list-group-item
-      .d-flex.justify-content-between
-        h5.mb-1 Wake Up / Personal devotions
-        span.badge.rounded-pill.bg-tertiary.p-2 7:00 am
-    li.list-group-item
-      .d-flex.justify-content-between
-        h5.mb-1 Breakfast
-        span.badge.rounded-pill.bg-tertiary.p-2 8:00 am
-    li.list-group-item
-      .d-flex.justify-content-between
-        h5.mb-1 Worship
-        span.badge.rounded-pill.bg-tertiary.p-2 9:00 am
-    li.list-group-item.list-group-item-secondary
-      .d-flex.justify-content-between
-        h5.mb-1 Session 1
-        span.badge.rounded-pill.bg-tertiary.p-2 9:30 am
-      p.mb-1 Daniel Noel / Chris Scott
-    li.list-group-item
-      .d-flex.justify-content-between
-        h5.mb-1 Group discussion
-        span.badge.rounded-pill.bg-tertiary.p-2 10:00 am
-    li.list-group-item
-      .d-flex.justify-content-between
-        h5.mb-1 Activity 1
-        span.badge.rounded-pill.bg-tertiary.p-2 10:30 am
-    li.list-group-item
-      .d-flex.justify-content-between
-        h5.mb-1 Lunch
-        span.badge.rounded-pill.bg-tertiary.p-2 12:00 pm
-    li.list-group-item
-      .d-flex.justify-content-between
-        h5.mb-1 Activity 2
-        span.badge.rounded-pill.bg-tertiary.p-2 1:30 pm
-    li.list-group-item
-      .d-flex.justify-content-between
-        h5.mb-1 Free time
-        span.badge.rounded-pill.bg-tertiary.p-2 3:00 pm
-      p.mb-1 Structured Activities
-    li.list-group-item
-      .d-flex.justify-content-between
-        h5.mb-1 Dinner
-        span.badge.rounded-pill.bg-tertiary.p-2 6:00 pm
-    li.list-group-item
-      .d-flex.justify-content-between
-        h5.mb-1 Worship
-        span.badge.rounded-pill.bg-tertiary.p-2 8:00 pm
-    li.list-group-item.list-group-item-secondary
-      .d-flex.justify-content-between
-        h5.mb-1 Session 2
-        span.badge.rounded-pill.bg-tertiary.p-2 8:30 pm
-      p.mb-1 Daniel Noel / Chris Scott
-    li.list-group-item
-      .d-flex.justify-content-between
-        h5.mb-1 Prayer / Group Discussions
-        span.badge.rounded-pill.bg-tertiary.p-2 9:00 pm
-    li.list-group-item
-      .d-flex.justify-content-between
-        h5.mb-1 Wind down
-        span.badge.rounded-pill.bg-tertiary.p-2 9:30 pm
+    .tab-content#pills-tabContent
+      .tab-pane.fade.show.active#pills-friday role='tabpanel' aria-labelledby='pills-friday-tab'
+        .card.mb-1
+          .card-body
+            h5.card-title Leave Raleigh from the church
+            h6.card-subtitle 4:00 pm
+        .card
+          .card-body
+            h5.card-title Arrival
+            h6.card-subtitle 9:00-10:30 pm
+      .tab-pane.fade#pills-saturday role='tabpanel' aria-labelledby='pills-saturday-tab'
+        .card.mb-1
+          .card-body
+            h5.card-title Wake Up / Personal devotions
+            h6.card-subtitle 7:00 am
+        .card.mb-1
+          .card-body
+            h5.card-title Breakfast
+            h6.card-subtitle 8:00 am
+        .card.mb-1
+          .card-body
+            h5.card-title Worship
+            h6.card-subtitle 9:00 am
+        .card.card--session.mb-1
+          .card-body
+            h5.card-title Session 1
+            h6.card-subtitle 9:30 am
+        .card.mb-1
+          .card-body
+            h5.card-title Group discussion
+            h6.card-subtitle 10:00 am
+        .card.mb-1
+          .card-body
+            h5.card-title Activity 1
+            h6.card-subtitle 10:30 am
+        .card.mb-1
+          .card-body
+            h5.card-title Lunch
+            h6.card-subtitle 12:00 pm
+        .card.mb-1
+          .card-body
+            h5.card-title Activity 2
+            h6.card-subtitle 1:30 pm
+        .card.mb-1
+          .card-body
+            h5.card-title Free time
+            h6.card-subtitle 3:00 pm
+        .card.mb-1
+          .card-body
+            h5.card-title Dinner
+            h6.card-subtitle 6:00 pm
+        .card.mb-1
+          .card-body
+            h5.card-title Worship
+            h6.card-subtitle 8:00 pm
+        .card.card--session.mb-1
+          .card-body
+            h5.card-title Session 2
+            h6.card-subtitle 8:30 pm
+        .card.mb-1
+          .card-body
+            h5.card-title Prayer / Group Discussions
+            h6.card-subtitle 9:00 pm
+        .card.mb-1
+          .card-body
+            h5.card-title Wind down
+            h6.card-subtitle 9:30 pm
 
-    li.list-group-item.list-group-item-primary
-      h5 Sunday
-    li.list-group-item
-      .d-flex.justify-content-between
-        h5.mb-1 Wake Up / Personal devotions
-        span.badge.rounded-pill.bg-tertiary.p-2 7:00 am
-    li.list-group-item
-      .d-flex.justify-content-between
-        h5.mb-1 Breakfast
-        span.badge.rounded-pill.bg-tertiary.p-2 8:00 am
-    li.list-group-item
-      .d-flex.justify-content-between
-        h5.mb-1 Worship
-        span.badge.rounded-pill.bg-tertiary.p-2 9:00 am
-    li.list-group-item.list-group-item-secondary
-      .d-flex.justify-content-between
-        h5.mb-1 Session 3
-        span.badge.rounded-pill.bg-tertiary.p-2 9:30 am
-      p.mb-1 Daniel Noel / Chris Scott
-    li.list-group-item
-      .d-flex.justify-content-between
-        h5.mb-1 Group discussion
-        span.badge.rounded-pill.bg-tertiary.p-2 10:00 am
-    li.list-group-item
-      .d-flex.justify-content-between
-        h5.mb-1 Activity 1
-        span.badge.rounded-pill.bg-tertiary.p-2 10:30 am
-    li.list-group-item
-      .d-flex.justify-content-between
-        h5.mb-1 Lunch
-        span.badge.rounded-pill.bg-tertiary.p-2 12:00 pm
-    li.list-group-item
-      .d-flex.justify-content-between
-        h5.mb-1 Activity 2
-        span.badge.rounded-pill.bg-tertiary.p-2 1:30 pm
-    li.list-group-item
-      .d-flex.justify-content-between
-        h5.mb-1 Free time
-        span.badge.rounded-pill.bg-tertiary.p-2 3:00 pm
-      p.mb-1 Structured Activities
-    li.list-group-item
-      .d-flex.justify-content-between
-        h5.mb-1 Dinner
-        span.badge.rounded-pill.bg-tertiary.p-2 6:00 pm
-    li.list-group-item
-      .d-flex.justify-content-between
-        h5.mb-1 Worship
-        span.badge.rounded-pill.bg-tertiary.p-2 8:00 pm
-    li.list-group-item.list-group-item-secondary
-      .d-flex.justify-content-between
-        h5.mb-1 Session 4
-        span.badge.rounded-pill.bg-tertiary.p-2 8:30 pm
-      p.mb-1 Daniel Noel / Chris Scott
-    li.list-group-item
-      .d-flex.justify-content-between
-        h5.mb-1 Prayer / Group Discussions
-        span.badge.rounded-pill.bg-tertiary.p-2 9:00 pm
-    li.list-group-item
-      .d-flex.justify-content-between
-        h5.mb-1 Wind down
-        span.badge.rounded-pill.bg-tertiary.p-2 9:30 pm
+      .tab-pane.fade#pills-sunday role='tabpanel' aria-labelledby='pills-sunday-tab'
+        .card.mb-1
+          .card-body
+            h5.card-title Wake Up / Personal devotions
+            h6.card-subtitle 7:00 am
+        .card.mb-1
+          .card-body
+            h5.card-title Breakfast
+            h6.card-subtitle 8:00 am
+        .card.mb-1
+          .card-body
+            h5.card-title Worship
+            h6.card-subtitle 9:00 am
+        .card.card--session.mb-1
+          .card-body
+            h5.card-title Session 3
+            h6.card-subtitle 9:30 am
+        .card.mb-1
+          .card-body
+            h5.card-title Group discussion
+            h6.card-subtitle 10:00 am
+        .card.mb-1
+          .card-body
+            h5.card-title Activity 1
+            h6.card-subtitle 10:30 am
+        .card.mb-1
+          .card-body
+            h5.card-title Lunch
+            h6.card-subtitle 12:00 pm
+        .card.mb-1
+          .card-body
+            h5.card-title Activity 2
+            h6.card-subtitle 1:30 pm
+        .card.mb-1
+          .card-body
+            h5.card-title Free time
+            h6.card-subtitle 3:00 pm
+        .card.mb-1
+          .card-body
+            h5.card-title Dinner
+            h6.card-subtitle 6:00 pm
+        .card.mb-1
+          .card-body
+            h5.card-title Worship
+            h6.card-subtitle 8:00 pm
+        .card.card--session.mb-1
+          .card-body
+            h5.card-title Session 4
+            h6.card-subtitle 8:30 pm
+        .card.mb-1
+          .card-body
+            h5.card-title Prayer / Group Discussions
+            h6.card-subtitle 9:00 pm
+        .card.mb-1
+          .card-body
+            h5.card-title Wind down
+            h6.card-subtitle 9:30 pm
 
-    li.list-group-item.list-group-item-primary
-      h5 Monday
-    li.list-group-item
-      .d-flex.justify-content-between
-        h5.mb-1 Wake Up / Personal devotions
-        span.badge.rounded-pill.bg-tertiary.p-2 7:00 am
-    li.list-group-item
-      .d-flex.justify-content-between
-        h5.mb-1 Breakfast
-        span.badge.rounded-pill.bg-tertiary.p-2 8:00 am
-    li.list-group-item.list-group-item-secondary
-      .d-flex.justify-content-between
-        h5.mb-1 Potential Session 5
-        span.badge.rounded-pill.bg-tertiary.p-2 9:00 am
-      p.mb-1 Daniel Noel / Chris Scott
-    li.list-group-item
-      .d-flex.justify-content-between
-        h5.mb-1 Leave
-        span.badge.rounded-pill.bg-tertiary.p-2 10:00 am
+      .tab-pane.fade#pills-monday role='tabpanel' aria-labelledby='pills-monday-tab'
+        .card.mb-1
+          .card-body
+            h5.card-title Wake Up / Personal devotions
+            h6.card-substitute 7:00 am
+        .card.mb-1
+          .card-body
+            h5.card-title Breakfast
+            h6.card-substitute 8:00 am
+        .card.card--session.mb-1
+          .card-body
+            h5.card-title Potential Session 5
+            h6.card-substitute 9:00 am
+        .card.mb-1
+          .card-body
+            h5.card-title Leave
+            h6.card-substitute 10:00 am
+
+javascript:
+  window.onload = function() {
+    const ids = {
+      1: 'pills-friday-tab',
+      2: 'pills-saturday-tab',
+      3: 'pills-sunday-tab',
+      4: 'pills-monday-tab'
+    };
+    const id = ids[new Date().getDate()];
+    if (id) {
+      document.getElementById(id).click();
+    }
+  }
